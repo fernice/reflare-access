@@ -8,5 +8,17 @@
     <artifactId>modern-reflare-access</artifactId>
     <version>0.1-SNAPSHOT</version>
 
+    <distributionManagement>
+        <repository>
+            <id>bewotec.jackplus.releases</id>
+            <name>Bewotec JackPlus Releases</name>
+            <url>http://nexus.webtravel.de/repository/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>bewotec.jackplus.snapshots</id>
+            <name>Bewotec JackPlus Snapshots</name>
+            <url>http://nexus.webtravel.de/repository/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     
 </project>
