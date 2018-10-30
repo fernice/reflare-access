@@ -8,7 +8,7 @@
         <version>1.0.5</version>
     </parent>
     <artifactId>fernice-reflare-access</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6-SNAPSHOT</version>
 
     <name>reflare Access</name>
     <description>Dirty helper for accessing internal Java API</description>
@@ -18,7 +18,7 @@
         <connection>scm:git:ssh://git@github.com:fernice/reflare-access.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:fernice/reflare-access.git</developerConnection>
         <url>https://github.com/fernice/reflare-access</url>
-        <tag>fernice-reflare-access-1.0.5</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
