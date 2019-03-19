@@ -7,6 +7,7 @@
 package org.fernice.reflare.internal;
 
 import java.awt.Image;
+import java.awt.image.ImageFilter;
 import java.io.IOException;
 
 public class ImageHelper extends Helper {
@@ -17,8 +18,20 @@ public class ImageHelper extends Helper {
         return accessor.getMultiResolutionImageResource(resource);
     }
 
+    public static Image getScaledInstance(Image image, int width, int height, int hints) {
+        return accessor.getScaledInstance(image, width, height, hints);
+    }
+
+    public static Image getFilteredInstance(Image image, ImageFilter filter) {
+        return accessor.getFilteredInstance(image, filter);
+    }
+
     public interface ImageAccessor {
 
         Image getMultiResolutionImageResource(String resource) throws IOException;
+
+        Image getScaledInstance(Image image, int width, int height, int hints);
+
+        Image getFilteredInstance(Image image, ImageFilter filter);
     }
 }
