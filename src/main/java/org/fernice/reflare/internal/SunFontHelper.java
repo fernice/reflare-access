@@ -19,9 +19,27 @@ public class SunFontHelper extends Helper {
         return accessor.findFont(name, weight, italic);
     }
 
+    public static boolean registerFontExtension(@NotNull Font font, boolean override) {
+        return accessor.registerFontExtension(font, override);
+    }
+
+    public static boolean unregisterFontExtension(@NotNull Font font) {
+        return accessor.unregisterFontExtension(font);
+    }
+
+    public static void refresh() {
+        accessor.refresh();
+    }
+
     public interface SunFontAccessor {
 
         @Nullable
         Font findFont(@NotNull String name, int weight, boolean italic);
+
+        boolean registerFontExtension(@NotNull Font font, boolean override);
+
+        boolean unregisterFontExtension(@NotNull Font font);
+
+        void refresh();
     }
 }
