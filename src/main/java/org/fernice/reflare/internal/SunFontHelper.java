@@ -31,15 +31,26 @@ public class SunFontHelper extends Helper {
         accessor.refresh();
     }
 
+    public static int getFontWeight(@NotNull Font font) {
+        return accessor.getFontWeight(font);
+    }
+
+    public static boolean isFontItalic(@NotNull Font font) {
+        return accessor.isFontItalic(font);
+    }
+
     public interface SunFontAccessor {
 
-        @Nullable
-        Font findFont(@NotNull String name, int weight, boolean italic);
+        @Nullable Font findFont(@NotNull String name, int weight, boolean italic);
 
         boolean registerFontExtension(@NotNull Font font, boolean override);
 
         boolean unregisterFontExtension(@NotNull Font font);
 
         void refresh();
+
+        int getFontWeight(@NotNull Font font);
+
+        boolean isFontItalic(@NotNull Font font);
     }
 }
