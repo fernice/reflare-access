@@ -10,7 +10,7 @@
     <artifactId>fernice-reflare-access</artifactId>
     <version>1.0.30-SNAPSHOT</version>
 
-    <name>reflare Access</name>
+    <name>reflare-access</name>
     <description>Dirty helper for accessing internal Java API</description>
     <url>https://github.com/fernice/reflare-access</url>
 
