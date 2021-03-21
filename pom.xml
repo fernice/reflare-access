@@ -8,7 +8,7 @@
         <version>1.0.32</version>
     </parent>
     <artifactId>fernice-reflare-access</artifactId>
-    <version>1.0.32-SNAPSHOT</version>
+    <version>1.0.33-SNAPSHOT</version>
 
     <name>reflare-access</name>
     <description>Dirty helper for accessing internal Java API</description>
